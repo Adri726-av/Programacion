@@ -15,3 +15,5 @@ match habitación:
         print("Segunda planta y con 2 camas")
     case 5:
         print("Tercera planta y con 1 cama")
+    case _:
+        print("Número no válido")
