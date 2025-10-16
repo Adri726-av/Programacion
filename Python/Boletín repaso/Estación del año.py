@@ -24,7 +24,7 @@ while (hemisferio == "norte" or hemisferio =="sur") and (dia <= 31 or mes <= 12)
                     print("Invierno")
                 if mes == 2:
                     print("Invierno")
-                if mes == 3 and dia <=20:
+                if mes == 3 and dia <=20:   
                     print("Invierno")
                 if mes == 3 and dia >=21:
                     print("Primavera")
