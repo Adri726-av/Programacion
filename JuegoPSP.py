@@ -11,7 +11,7 @@ listaS = ["S", "s"]
 eleccion = input("Selecciona R / E / S / P / D / G: ")
 
 Nombres = ["Dark Souls 1", "Elden Ring", "Zelda"]
-Puntuaciones = ["9", "10", "8"]
+Puntuaciones = [9, 10, 8]
 Generos = ["accion", "aventura", "aventura"]
 Juegos = []
 
@@ -30,7 +30,7 @@ while eleccion not in listaS:
     elif eleccion == "E" or eleccion == "e":
         print("Tu coleccion de Juegos: ")
 
-        for i in range(0, len(Nombres)):
+        for i in range(len(Nombres)):
             print(f"Nombre: {Nombres[i]} | Puntuacion: {Puntuaciones[i]} | Genero: {Generos[i]}")
 
     elif eleccion == "P" or eleccion == "p":
@@ -52,13 +52,11 @@ while eleccion not in listaS:
     elif eleccion == "G" or eleccion == "g":
         nomgenero = input("Introduce un género: ")
         for i in (0, len(Generos)):
-            if nomgenero in Generos:
-                numgenero = Generos.index(nomgenero)
-                Juegos.append(numgenero)
-                print(Juegos)
-            
+            if Generos[i] == nomgenero:
+                Juegos.append(Nombres[i])
                 
-
+        print(Juegos)
+            
     eleccion = input("Selecciona R, E, S, P, D o G: ")
 
 print("Terminado...")
