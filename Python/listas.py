@@ -19,11 +19,11 @@ else:
 print(diaSemana[0:len(diaSemana)])      # Lista completa
 print(diaSemana[1:3])                   # Para escribir por pantalla los elementos de la lista de el rango 1:3 (el 3 no lo escribe)
 
-diaSemana = diaSemana + diafinSemana
+diaSemana = diaSemana + diafinSemana    # Concatenar listas
 
                 # Recorrer listas:
 # Recorrido por posición
-for i in range(2,-1,-1):
+for i in range(len(diaSemana)):
     print(diaSemana[i])
 
 # Recorrido por valor

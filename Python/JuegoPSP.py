@@ -51,7 +51,7 @@ while eleccion not in listaS:
     
     elif eleccion == "G" or eleccion == "g":
         nomgenero = input("Introduce un género: ")
-        for i in (0, len(Generos)):
+        for i in (len(Generos)):
             if Generos[i] == nomgenero:
                 Juegos.append(Nombres[i])
                 
