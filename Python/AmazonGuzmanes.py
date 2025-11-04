@@ -24,4 +24,13 @@ while opcion != "g":
             if "@" not in correo:
                 incorrectos.append(correo)
             else:
-                
+                indice_arroba = correo.find("@")
+                parte_despues = correo[indice_arroba + 1:]
+                if "." not in parte_despues:
+                    incorrectos.append(correo)
+        
+        print(f"Hay {len(incorrectos)} emails inválidos:")
+        for correo in incorrectos:
+            print("-", correo)
+
+    opcion = input("Elige una opción: ").lower()
