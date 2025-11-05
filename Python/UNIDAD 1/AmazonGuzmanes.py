@@ -7,6 +7,7 @@ print("G) Salir")
 print("="*50)
 listaPremiums = []
 listaCorreos = []
+listaDominios = []
 opcion = input("Elige una opción: ").lower()
 while opcion != "a" and opcion != "v" and opcion != "c" and opcion != "m" and opcion != "g":
     opcion = input("Elige una opción válida porfavor: ").lower()
@@ -31,6 +32,15 @@ while opcion != "g":
         
         print(f"Hay {len(incorrectos)} emails inválidos:")
         for correo in incorrectos:
+            print("-", correo)
+    
+    elif opcion == "c":
+        dominio = input("Introduce un dominio de correo: ")
+        for correo in listaCorreos:
+            if dominio in correo:
+                listaDominios.append(correo)
+        print(f"Hay {len(listaDominios)} emails con ese dominio")
+        for correo in listaDominios:
             print("-", correo)
 
     opcion = input("Elige una opción: ").lower()
