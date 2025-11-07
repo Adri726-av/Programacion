@@ -24,4 +24,7 @@ while incidente !="N":
         else:
             graves.append(".")
 
-print(f"Se han producido {len(incidentes)} en el centro: {len(leves)} de ellos Leves y {len(graves)} Graves, siendo el ")
+        porcentajeEso = (len(eso)*100) % len(incidentes)
+        porcentajePost = (len(post_obligatoria)*100 % len(incidentes))
+
+print(f"Se han producido {len(incidentes)} en el centro: {len(leves)} de ellos Leves y {len(graves)} Graves, siendo el {porcentajeEso} % en ESO y el {porcentajePost} en Post-Obligatoria.")

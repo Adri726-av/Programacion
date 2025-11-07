@@ -4,6 +4,7 @@ while num1 !=0 or num2 != 0:
     num1 = int(input("Introduce un numero: "))
     num2 = int(input("Introduce otro numero: "))
     while num1 > num2:
+        print("El primer numero tiene que ser menor que el segundo.")
         num1 = int(input("Introduce un numero: "))
         num2 = int(input("Introduce otro numero: "))
     impares = []
@@ -33,3 +34,5 @@ while num1 !=0 or num2 != 0:
 
     print(f"Impares que existen entre [{num1} - {num2}]: {cadena_impares}")
     print(f"En total existen {len(impares)} numeros impares en el rango")
+
+print("Fin del programa")
