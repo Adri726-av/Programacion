@@ -6,9 +6,6 @@ while num1 !=0 or num2 != 0:
     while num1 > num2:
         num1 = int(input("Introduce un numero: "))
         num2 = int(input("Introduce otro numero: "))
-    if num1 == 0 or num2 == 0:
-        print("Fuera del programa")
-        break
     impares = []
     intervalo = input("Introduce A si el rango es abierto o C si el rango es cerrado: ").upper()
     while intervalo != "A" and intervalo != "C":
