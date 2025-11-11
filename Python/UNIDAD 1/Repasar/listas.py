@@ -29,3 +29,24 @@ for i in range(len(diaSemana)):
 # Recorrido por valor
 for dia in diaSemana:
     print(dia)
+
+# Imprimir la palabra mas corta y más larga de una lista
+
+    corta = lista[0]
+    larga = lista[0]
+    for i in lista:
+        if len(i) < len(corta): # para la palabra mas corta
+            corta = i
+    for i in lista:
+        if len(i) > len(larga): # para la palabra mas larga
+            larga = i
+    print(f"Palabra mas corta: {corta}")
+    print(f"Palabra mas larga: {larga}")
+
+# Imprimir el juego con la puntuacion mas ata de una lista
+max = 0
+for puntuacion in Puntuaciones:
+    if puntuacion > max:
+        max = puntuacion
+punMax = Puntuaciones.index(max)
+print(f"Nombre: {Nombres[punMax]} | Puntuacion: {Puntuaciones[punMax]} | Genero: {Generos[punMax]}")
