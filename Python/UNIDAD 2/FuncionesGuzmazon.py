@@ -31,14 +31,16 @@ def pinteMenu():
 # leaOpciones
 def leaOpciones():
     opcion = input("Introduce S / R / C:").upper()
+    return opcion
 
 # calculeSobrante
-def calculeSobrante():
+def calculeSobrante(gastar, suma_total):
     sobrante = gastar - suma_total
     print(f"El dinero que te sobra es: {sobrante}")
+    return sobrante
 
 # eliminaProducto
-def eliminaProducto():
+def eliminaProducto(lista_productos, lista_precios):
     nombre = input("Introduce el nombre de un producto: ")
     print(lista_productos)
     print(lista_precios)
@@ -54,10 +56,11 @@ def eliminaProducto():
 
 # masAlto
 
-presupuesto = input("Dime cuanto tienes para gastarte como maximo")
+presupuesto = float(input("Dime cuanto tienes para gastarte como maximo"))
 resultados = cargaCesta(presupuesto)
-lista_productos = resultados[0]
-lista_precios = resultados[1]
-lista_productos_superior = resultados[2]
-gastar = resultados[3]
-suma_total = resultados[4]
+pinteMenu()
+opcion = leaOpciones()
+if opcion == "S":
+    sobrante = calculeSobrante(resultados[3], resultados[4])
+elif opcion == "R":
+    remove = eliminaProducto(resultados[0], resultados[1])
