@@ -6,6 +6,16 @@ def GeneraNumeros():
         numeros.append(num)
     return numeros
 
+def Menu():
+    print("A. Conocer el mayor")
+    print("B. Conocer el menor")
+    print("C. Obtener la suma de todos los números")
+    print("D. Obtener la media")
+    print("E. Sustituir el valor de un elemento por otro número introducido por teclado")
+    print("F. Mostrar todos los números")
+    opcion = input("Introduce un número: ").upper()
+    return opcion
+
 def conocerMayor(lista):
     max = 0
     for i in lista:
@@ -31,15 +41,28 @@ def Media(lista):
     for i in range(len(lista)):
         suma += lista[i]
     media = suma / len(lista)
-    return media   
+    return media
 
+def Sustituir(lista):
+    pos = int(input("Introduce la posición del número de quieres reemplazar: "))
+    num = int(input("Introduce el número que quieres reemplazar: "))
+    lista.pop(pos)
+    lista.insert(pos,num)
+
+opcion = Menu()
 lista = GeneraNumeros()
 mayor = conocerMayor(lista)
 menor = conocerMenor(lista)
 suma = Suma(lista)
 media = Media(lista)
-print(lista)
-print(mayor)
-print(menor)
-print(suma)
-print(media)
+opcion = Menu()
+if opcion == "A":
+    print(mayor)
+elif opcion == "B":
+    print(menor)
+elif opcion == "C":
+    print(suma)
+elif opcion == "D":
+    print(media)
+elif opcion == "E":
+    sustituido = Sustituir(lista)
