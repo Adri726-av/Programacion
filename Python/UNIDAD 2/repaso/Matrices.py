@@ -21,9 +21,21 @@ def sumaFila2(matriz, numFila):
         suma += i
     return suma
 
+def encontrar(numero, matriz):
+    encontrado = False
+    pos = 0
+    while pos < len(matriz) and not encontrado:
+        if matriz[pos][pos] == numero:
+            encontrado = True
+        else:
+            pos += 1
+
 suma0 = sumaFila0(matriz, 0)
 suma1 = sumaFila1(matriz,1)
 suma2 = sumaFila2(matriz, 2)
+encontrado = encontrar(3, matriz)
+print(encontrado)
 
 total = suma0 + suma1 + suma2
 print(total)
+

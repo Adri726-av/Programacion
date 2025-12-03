@@ -43,7 +43,7 @@ def getProducto(ventas, nombreProducto):
 def productoDestacado(ventas, nombreProducto):
     valoracion = True
     verifico = getProducto(ventas,nombreProducto)
-    if verifico[3] >= 4.2:
+    if verifico [3] >= 4.2:
         valoracion = True
     else:
         valoracion = False
@@ -56,11 +56,45 @@ def getProductosDestacados(ventas):
             lista.append(elemento)
     return lista
 
+def tieneMayorIngreso(nombreProducto1, nombreProducto2, ventas):
+    mayor = True
+    ingreso1 = calculaIngreso(ventas, nombreProducto1)
+    ingreso2 = calculaIngreso(ventas, nombreProducto2)
+    if ingreso1 > ingreso2:
+        mayor = True
+    else:
+        mayor = False
+    return mayor
+
+smartphone = calculaIngreso(ventas, "Smartphone")
+auriculares = calculaIngreso(ventas, "Auriculares")
+assert(tieneMayorIngreso("Smartphone",  "Auriculares", ventas))
+
+def calcular_ingresosTotales(ventas):
+    total = 0
+    for elemento in ventas:
+        nombre = elemento[0]
+        total += calculaIngreso(ventas, nombre)
+    return total
+
+assert(calcular_ingresosTotales(ventas ))
+
 resultado1 = calculaIngreso(ventas, producto)
-print(resultado1)
+print(f"El ingreso total de {producto} es {resultado1}")
 
 resultado2 = getProducto(ventas, producto)
-print(resultado2)
+print(f"El producto es {resultado2}")
 
 listaDestacados = getProductosDestacados(ventas)
-print(listaDestacados)
+print(f"Productos destacados: {listaDestacados}")
+
+eleccion = input("Introduce un producto: ")
+eleccion2 = input("Introduce un producto: ")
+
+mayor = tieneMayorIngreso(eleccion, eleccion2, ventas)
+if mayor == True:
+    print(f"{eleccion} tiene mas ingresos que {eleccion2}")
+else:
+    print(f"{eleccion} tiene menos ingresos que {eleccion2}")
+
+total_ventas = calcular_ingresosTotales(ventas)
