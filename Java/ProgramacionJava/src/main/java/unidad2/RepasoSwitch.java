@@ -17,7 +17,6 @@ public class RepasoSwitch {
                 break;
             default:
                 System.out.println("OTRO");
-                break;
         }
 
     }
