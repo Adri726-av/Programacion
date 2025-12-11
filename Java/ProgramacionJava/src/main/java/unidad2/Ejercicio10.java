@@ -15,7 +15,8 @@ public class Ejercicio10 {
 
         if (numero2 != 0) {
             System.out.println("El resultado de la division es: " + division);
-        } else {
+        }
+        else {
             System.out.println("El segundo número no puede ser 0");
         }
 
