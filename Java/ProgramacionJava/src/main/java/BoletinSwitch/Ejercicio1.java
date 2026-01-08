@@ -1,8 +1,8 @@
-package unidad2;
+package BoletinSwitch;
 
 import java.util.Scanner;
 
-public class RepasoSwitch {
+public class Ejercicio1 {
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Introduce un numero: ");

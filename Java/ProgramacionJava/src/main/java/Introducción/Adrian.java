@@ -1,4 +1,4 @@
-package unidad2;
+package Introducción;
 
 public class Adrian {
     static void main() {
@@ -18,7 +18,7 @@ public class Adrian {
         else {
             System.out.println("Encontrado");
         }
-        
+
     }
 }
 
