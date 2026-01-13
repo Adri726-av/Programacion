@@ -20,6 +20,5 @@ public class ElCodificadorDelGremioDeMagos {
     String clave = scanner.nextLine();
     System.out.println("Texto del conjuro que contiene errores o palabras prohibidas: ");
     String mensaje = scanner.nextLine();
-
     }
 }
