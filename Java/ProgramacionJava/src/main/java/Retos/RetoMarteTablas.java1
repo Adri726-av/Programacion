@@ -19,7 +19,7 @@ public class RetoMarteTablas {
         if (encontrado) {
             char cadena = Nombre[2]+":"+cantidades[]
         }
-        return
+        return encontrado;
     }
     static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
