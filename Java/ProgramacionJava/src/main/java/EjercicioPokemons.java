@@ -39,10 +39,8 @@ public class EjercicioPokemons {
         while (pos_sistema == pos){
             pos_sistema = random.nextInt(0,contador);
         }
-        String miPokemon = nombres[pos];
         int miNivel = niveles[pos];
-        String pokemonEntrenador = nombres[pos];
-        int nivelEntrenador = niveles[pos];
+        int nivelEntrenador = niveles[pos_sistema];
         if (miNivel > nivelEntrenador){
             System.out.println("Has ganado");
         }
