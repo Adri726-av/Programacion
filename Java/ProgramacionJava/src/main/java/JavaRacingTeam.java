@@ -8,6 +8,7 @@ public class JavaRacingTeam {
         System.out.println("4. Buscar Piloto");
         System.out.println("5. Generar IDs de Carrera");
         System.out.println("6. Salir");
+        System.out.println("Elige una opcion: ");
         int opcion = scanner.nextInt();
         return opcion;
     }
