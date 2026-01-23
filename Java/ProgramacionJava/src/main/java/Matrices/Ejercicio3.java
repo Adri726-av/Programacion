@@ -61,7 +61,7 @@ public class Ejercicio3 {
                     ref.calcularEscudo(galaxia);
                     break;
                 case 3:
-                    ref.encontarRefugio(galaxia);
+
                     break;
             }
 

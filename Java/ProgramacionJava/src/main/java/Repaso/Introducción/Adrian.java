@@ -1,4 +1,4 @@
-package Introducción;
+package Repaso.Introducción;
 
 public class Adrian {
     static void main() {

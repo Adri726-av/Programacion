@@ -1,4 +1,4 @@
-package BoletinSwitch;
+package Repaso.BoletinSwitch;
 
 import java.util.Scanner;
 

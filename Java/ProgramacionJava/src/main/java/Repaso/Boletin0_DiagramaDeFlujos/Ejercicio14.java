@@ -1,4 +1,4 @@
-package Boletin0_DiagramaDeFlujos;
+package Repaso.Boletin0_DiagramaDeFlujos;
 
 import java.util.Random;
 import java.util.Scanner;

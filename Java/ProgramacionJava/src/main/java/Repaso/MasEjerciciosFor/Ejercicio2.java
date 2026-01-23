@@ -1,4 +1,4 @@
-package MasEjerciciosFor;
+package Repaso.MasEjerciciosFor;
 
 import java.util.Scanner;
 

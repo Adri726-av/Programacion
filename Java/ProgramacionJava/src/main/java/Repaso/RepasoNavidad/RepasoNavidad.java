@@ -1,4 +1,4 @@
-package RepasoNavidad;
+package Repaso.RepasoNavidad;
 import java.util.Scanner;
 import java.util.Random;
 

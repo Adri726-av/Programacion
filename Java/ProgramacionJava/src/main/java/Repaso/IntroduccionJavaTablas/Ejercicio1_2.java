@@ -1,4 +1,4 @@
-package IntroduccionJavaTablas;
+package Repaso.IntroduccionJavaTablas;
 
 public class Ejercicio1_2 {
     static void main(String[] args) {

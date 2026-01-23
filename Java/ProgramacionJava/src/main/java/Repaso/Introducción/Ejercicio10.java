@@ -1,4 +1,4 @@
-package Introducción;
+package Repaso.Introducción;
 
 import java.util.Scanner;
 

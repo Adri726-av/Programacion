@@ -1,3 +1,5 @@
+package Simulacros;
+
 import java.util.Scanner;
 
 public class JavaRacingTeam {
