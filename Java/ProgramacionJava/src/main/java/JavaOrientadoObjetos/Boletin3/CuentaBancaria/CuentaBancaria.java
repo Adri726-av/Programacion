@@ -65,7 +65,9 @@ public class CuentaBancaria {
 
     }
 
-    public void validarDNI()
+    public void validarDNI() {
+
+    }
 
 
 }
