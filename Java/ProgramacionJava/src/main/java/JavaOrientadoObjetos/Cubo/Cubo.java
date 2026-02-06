@@ -8,7 +8,7 @@ public class Cubo {
 
     // Metodos
 
-    public double calculaArea() {
+  /*  public double calculaArea() {
 
     }
 
@@ -22,5 +22,5 @@ public class Cubo {
 
     public boolean vaciar(double litro) {
 
-    }
+    }*/
 }
