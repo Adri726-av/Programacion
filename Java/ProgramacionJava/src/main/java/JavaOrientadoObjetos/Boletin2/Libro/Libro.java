@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Libro;
+package JavaOrientadoObjetos.Boletin2.Libro;
 
 public class Libro {
     // Atributos
