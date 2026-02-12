@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Boletin4.Herencia2;
+package JavaOrientadoObjetos.Boletin4.Herencia2.Ejercicio1;
 
 public class Personaje {
     private String nombre;

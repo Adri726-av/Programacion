@@ -1,6 +1,6 @@
-package JavaOrientadoObjetos.Boletin4.Herencia2;
+package JavaOrientadoObjetos.Boletin4.Herencia2.Ejercicio1;
 
-public class Caballero extends Personaje{
+public class Caballero extends Personaje {
 
     public Caballero(String nombre, int nivel, int hp, String arma) {
         super(nombre, nivel, hp, arma);
