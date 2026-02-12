@@ -1,16 +1,19 @@
 package JavaOrientadoObjetos.Boletin4.Herencia1;
 
+import java.util.Objects;
+
 public class Vehiculo {
 
-    protected String dueno;
-    protected int numPuertas;
-    protected int numRuedas;
+    private String dueno;
+    private int numPuertas;
+    private int numRuedas;
 
     public Vehiculo(String dueno, int numPuertas, int numRuedas) {
         this.dueno = dueno;
         this.numPuertas = numPuertas;
         this.numRuedas = numRuedas;
     }
+
 
     public String getDueno() {
         return dueno;
@@ -30,8 +33,15 @@ public class Vehiculo {
         System.out.println("Ruedas: " + numRuedas);
     }
 
-    public boolean tieneLicenciaParaCircular(String ciudad) {
-        return false;
+
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "dueno='" + getDueno() + '\'' +
+                ", numPuertas=" + getNumPuertas() +
+                ", numRuedas=" + getNumRuedas() +
+                '}';
     }
 }
 

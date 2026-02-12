@@ -11,21 +11,23 @@ public class Arquero extends Personaje{
     }
 
     public boolean esAtacado(Personaje atacante) {
+        boolean atacado = false;
         if (atacante.getClass() == Caballero.class) {
-            return false;
+            atacado = false;
         }
         else if (atacante.getClass() == Mago.class) {
-            return true;
+            atacado = true;
         }
         return false;
     }
 
     public boolean esAtacado(Personaje atacante, int distancia) {
+        boolean atacado = false;
         if (atacante.getClass() == Caballero.class && distancia < 50) {
-            return true;
+            atacado = true;
         }
         else if (atacante.getClass() == Mago.class) {
-            return true;
+            atacado = true;
         }
         return false;
     }

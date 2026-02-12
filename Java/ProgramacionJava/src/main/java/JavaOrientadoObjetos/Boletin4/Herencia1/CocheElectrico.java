@@ -14,6 +14,10 @@ public class CocheElectrico extends Automovil {
         return tipoBateria;
     }
 
+    public void setTipoBateria(String tipoBateria) {
+        this.tipoBateria = tipoBateria;
+    }
+
     @Override
     public void imprimeResumen() {
         super.imprimeResumen();

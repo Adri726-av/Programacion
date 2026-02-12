@@ -3,7 +3,7 @@ package JavaOrientadoObjetos.Boletin4.Herencia2;
 public class GestionaJuego {
     static void main(String[] args) {
         Caballero caballero = new Caballero("Leon", 10, 100, "Espada");
-        Villano villano = new Villano("Gargamel", 99, 200, "");
+        Villano villano = new Villano("Gargamel", 99, 200);
         Arquero arquero = new Arquero("Sova", 70, 120, "Flecha");
         Mago mago = new Mago("Alex", 55, 100, "Hechizo");
 
