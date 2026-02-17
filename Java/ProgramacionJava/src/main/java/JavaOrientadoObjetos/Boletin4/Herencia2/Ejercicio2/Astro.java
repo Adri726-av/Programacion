@@ -27,7 +27,7 @@ public class Astro {
         this.nombre = nombre;
     }
 
-    public int getMasa() {
+    public long getMasa() {
         return masa;
     }
 
