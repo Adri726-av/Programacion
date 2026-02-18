@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Anime;
+package JavaOrientadoObjetos.Probando.Anime;
 
 public class Naruto extends PersonajeAnime{
     private Elemento elemento;

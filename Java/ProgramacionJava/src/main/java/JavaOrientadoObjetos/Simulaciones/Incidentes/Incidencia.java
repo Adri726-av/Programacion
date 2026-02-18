@@ -1,5 +1,7 @@
 package JavaOrientadoObjetos.Simulaciones.Incidentes;
 
+import java.time.LocalDate;
+
 public class Incidencia {
     private int id;
     private String nombre;
@@ -10,14 +12,14 @@ public class Incidencia {
     private Criticidad criticidad;
     private Equipo equipo;
 
-    public Incidencia(int id, String nombre, String descripcion, String fechaRegistro, Estado estado, Criticidad criticidad, Equipo equipo) {
+    public Incidencia(int id, String nombre, String descripcion, Estado estado, Criticidad criticidad, Equipo equipo) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
-        this.fechaRegistro = fechaRegistro;
         this.estado = estado;
         this.criticidad = criticidad;
         this.equipo = equipo;
+        this.fechaRegistro = LocalDate.now();
     }
 
     public int getId() {
@@ -86,10 +88,16 @@ public class Incidencia {
 
     public boolean esUrgente() {
         boolean urgente = false;
-        if (criticidad.equals("CRITICIDAD")) {
+        LocalDate hoy = LocalDate.now();
+        if (criticidad == Criticidad.CRITICA){
             urgente = true;
         }
-        // else if (criticidad.equals("GRAVE") && )
+        else if (this.criticidad == Criticidad.GRAVE && this.estado == Estado.CERRADA && hoy.minusDays(7).isAfter(this.fechaRegistro)){
+            urgente = true;
+        }
+        else if (this.criticidad == Criticidad.MEDIA && this.estado != Estado.CERRADA && hoy.minusDays(30).isAfter(this.fechaRegistro)){
+            urgente = true;
+        }
         return urgente;
     }
 

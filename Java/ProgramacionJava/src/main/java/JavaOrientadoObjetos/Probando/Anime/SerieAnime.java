@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Anime;
+package JavaOrientadoObjetos.Probando.Anime;
 
 import java.util.Objects;
 

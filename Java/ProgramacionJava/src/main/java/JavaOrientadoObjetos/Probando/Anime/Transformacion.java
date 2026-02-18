@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Anime;
+package JavaOrientadoObjetos.Probando.Anime;
 
 public class Transformacion {
     private PersonajeAnime origen;

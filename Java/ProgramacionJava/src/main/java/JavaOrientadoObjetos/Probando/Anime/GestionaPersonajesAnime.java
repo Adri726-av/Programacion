@@ -1,6 +1,4 @@
-package JavaOrientadoObjetos.Anime;
-
-import JavaOrientadoObjetos.Boletin3.CuentaBancaria.Persona;
+package JavaOrientadoObjetos.Probando.Anime;
 
 public class GestionaPersonajesAnime {
     static void main(String[] args) {
