@@ -1,4 +1,4 @@
-package JavaOrientadoObjetos.Boletin2.Libro.Gatos;
+package JavaOrientadoObjetos.Boletin2.Gatos;
 
 public class GestionarGatos {
     static void main(String[] args) {

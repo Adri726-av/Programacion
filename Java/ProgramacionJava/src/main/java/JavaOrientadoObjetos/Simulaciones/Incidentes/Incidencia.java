@@ -6,7 +6,7 @@ public class Incidencia {
     private int id;
     private String nombre;
     private String descripcion;
-    private String fechaRegistro;
+    private LocalDate fechaRegistro;
     private String fechaCierre;
     private Estado estado;
     private Criticidad criticidad;
@@ -46,11 +46,11 @@ public class Incidencia {
         this.descripcion = descripcion;
     }
 
-    public String getFechaRegistro() {
+    public LocalDate getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(String fechaRegistro) {
+    public void setFechaRegistro(LocalDate fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
 
