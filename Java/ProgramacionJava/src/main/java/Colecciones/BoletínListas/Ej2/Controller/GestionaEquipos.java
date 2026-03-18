@@ -20,7 +20,20 @@ public class GestionaEquipos {
         e2.anadirAlumno(a6);
         e1.anadirAlumno(a1);
         e1.anadirAlumno(a2);
+        e1.mostrarEquipo();
+        System.out.println("Fin e1******************");
+        e2.mostrarEquipo();
+        System.out.println("Fin e2******************");
         Equipo e3 = e1.interseccionEquipo(e2);
         e3.mostrarEquipo();
+        System.out.println("Fin e3******************");
+        e2.mostrarEquipo();
+        System.out.println("Fin e2******************");
+        Equipo e4 = e1.unirEquipo(e2);
+        e4.mostrarEquipo();
+        System.out.println("Fin e4******************");
+        e2.mostrarEquipo();
+        System.out.println("fin e2******************");
+        e4.mostrarEquipo();
     }
 }

@@ -1,4 +1,4 @@
-package Colecciones.Estudio.Controller;
+package Colecciones.Estudio;
 
 import java.util.ArrayList;
 import java.util.Iterator;

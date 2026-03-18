@@ -4,6 +4,7 @@ import Colecciones.BoletínListas.Ej2.Exceptions.DeportivosException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Equipo {
     private String nombre;
@@ -15,15 +16,7 @@ public class Equipo {
     }
 
     public void anadirAlumno(Alumno a) throws DeportivosException {
-        boolean encontrado = false;
-        int i = 0;
-        while (!encontrado && i < alumnos.size()){
-            if (alumnos.get(i).getDni().equalsIgnoreCase(a.getDni())){
-                encontrado = true;
-            }
-            i++;
-        }
-        if (!encontrado){
+        if (!this.alumnos.contains(a)){
             alumnos.add(a);
         }
         else {
@@ -32,15 +25,7 @@ public class Equipo {
     }
 
     public void borrarAlumno(Alumno a) throws DeportivosException{
-        boolean encontrado = false;
-        int i = 0;
-        while (!encontrado && i < alumnos.size()){
-            if (alumnos.get(i).getDni().equalsIgnoreCase(a.getDni())){
-                encontrado = true;
-            }
-            i++;
-        }
-        if (encontrado){
+        if (this.alumnos.contains(a)){
             alumnos.remove(a);
         }
         else{
@@ -49,15 +34,10 @@ public class Equipo {
     }
 
     public Alumno perteneceEquipo(Alumno a){
-        boolean encontrado = false;
         Alumno alumno = null;
-        int i = 0;
-        while (!encontrado && i < alumnos.size()){
-            if (alumnos.get(i).getDni().equalsIgnoreCase(a.getDni())){
-                alumno = a;
-                encontrado = true;
-            }
-            i++;
+        if(this.alumnos.contains(a)){
+            int pos = this.alumnos.indexOf(a);
+            alumno = this.alumnos.get(pos);
         }
         return alumno;
     }
@@ -80,5 +60,16 @@ public class Equipo {
         e1.alumnos = this.alumnos;
         e1.alumnos.retainAll(e.alumnos);
         return e1;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof Equipo equipo)) return false;
+        return Objects.equals(nombre, equipo.nombre);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(nombre);
     }
 }
